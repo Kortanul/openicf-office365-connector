@@ -20,7 +20,7 @@
   !
   ! CCPL HEADER END
   !
-  !      Copyright 2011-2014 ForgeRock AS
+  !      Copyright 2016 ForgeRock AS
   !
 -->
  <chapter xml:id="install-org.forgerock.openicf.connectors-office365-connector-${project.version}"
@@ -39,21 +39,30 @@
     <section xml:id="before-you-install-org.forgerock.openicf.connectors-office365-connector-${project.version}">
         <title>Before You Install the ${project.name}</title>
         <para>
-            TO BE WRITTEN MANUALLY
+         The ${project.name} uses the O365 Graph API to manage the Azure AD for
+         a given tenant. This connector uses the OData 3.0 specification and can
+         be used, with minor modifications, to connect to any OData 3 provider.
+         Note that OData 2, 3 and 4 are not interchangeable and this connector
+         can only function against OData 3 providers.
         </para>
     </section>
 
     <section xml:id="connector-install-org.forgerock.openicf.connectors-office365-connector-${project.version}">
         <title>Installing the ${project.name}</title>
         <para>
-            TO BE WRITTEN MANUALLY
+         The ${project.name} is provided only on ForgeRock Backstage. <!--TODO - check -->
         </para>
     </section>
 
         <section xml:id="connector-pooling-org-forgerock-openicf-connectors-office365-O365Connector-${project.version}">
         <title>Configuring Connector Pooling</title>
         <para>
-            TO BE WRITTEN MANUALLY
+         The ${project.name} supports connection pooling, which can
+         substantially improve the performance of the connector. The basic
+         connection pooling configuration is described in the <link xlink:show="new"
+         xlink:href="CURRENT.DOCID#appendix-pooling"
+         xlink:role="http://docbook.org/xlink/role/olink"><citetitle>Connection
+         Pooling Configuration Appendix</citetitle></link>.
         </para>
     </section>
     

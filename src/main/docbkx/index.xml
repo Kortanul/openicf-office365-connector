@@ -40,13 +40,13 @@
             <year>2011-2016</year>
             <holder>ForgeRock AS</holder>
         </copyright>
-        <!--authorgroup>
+        <authorgroup>
          <author>
           <personname>
-           <firstname>John</firstname><surname>Doe</surname>
+           <firstname>Lana</firstname><surname>Frost</surname>
           </personname>
          </author>
-        </authorgroup-->
+        </authorgroup>
         <xinclude:include href="../legal.xml" />
         <date><?dbtimestamp format="B d, Y"?></date>
         <pubdate>Publication date: <?dbtimestamp format="B d, Y"?></pubdate>
