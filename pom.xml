@@ -28,7 +28,7 @@
     </parent>
     <groupId>org.forgerock.openicf.connectors</groupId>
     <artifactId>office365-connector</artifactId>
-    <version>1.4.0.0-SNAPSHOT</version>
+    <version>1.4.0.0</version>
     <packaging>bundle</packaging>
     <name>O365 Connector</name>
     <description>Connector for O365</description>
@@ -45,7 +45,8 @@
         <connection>scm:git:ssh://git@stash.forgerock.org:7999/openicf/office365-connector.git</connection>
         <developerConnection>scm:git:ssh://git@stash.forgerock.org:7999/openicf/office365-connector.git</developerConnection>
         <url>http://stash.forgerock.org/projects/OPENICF/repos/office365-connector/browse</url>
-    </scm>
+      <tag>1.4.0.0</tag>
+  </scm>
     <properties>
         <maven.compiler.target>1.6</maven.compiler.target>
         <maven.compiler.source>1.6</maven.compiler.source>
