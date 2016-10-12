@@ -28,7 +28,7 @@
     </parent>
     <groupId>org.forgerock.openicf.connectors</groupId>
     <artifactId>office365-connector</artifactId>
-    <version>1.4.0.1-SNAPSHOT</version>
+    <version>1.4.1.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <name>O365 Connector</name>
     <description>Connector for O365</description>
@@ -81,17 +81,17 @@
         <dependency>
             <groupId>org.forgerock.commons</groupId>
             <artifactId>json-resource</artifactId>
-            <version>20.0.0</version>
+            <version>20.1.0</version>
         </dependency>
         <dependency>
             <groupId>org.forgerock.commons</groupId>
             <artifactId>forgerock-util</artifactId>
-            <version>20.0.0</version>
+            <version>20.1.0</version>
         </dependency>
         <dependency>
             <groupId>org.forgerock.http</groupId>
             <artifactId>chf-client-apache-sync</artifactId>
-            <version>20.0.0</version>
+            <version>20.1.0</version>
         </dependency>
 
         <!-- Test Dependencies -->
@@ -117,6 +117,12 @@
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
                 <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Export-Package>org.forgerock.openicf.connectors.office365.*</Export-Package>
+                        <Embed-Dependency>forgerock-util|json-resource|chf-client-apache-sync|i18n-core|chf-http-core|chf-client-apache-common</Embed-Dependency>
+                    </instructions>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.forgerock.maven.plugins</groupId>
